@@ -148,3 +148,28 @@ console.log(arr);
 function compareNum(a, b) {
     return a - b;
 } 
+
+
+
+// MAIN OOP прототипно-орентировано-наследование 
+
+
+const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log("Hello");
+    }
+};
+
+const jonh = Object.create(soldier); // нужна команда
+
+// const jonh = {
+//     health: 100
+// };
+
+// Object.setPrototypeOf(jonh, soldier); // нужна тоже 
+
+jonh.sayHello();
+
+
